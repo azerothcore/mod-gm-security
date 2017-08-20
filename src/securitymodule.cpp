@@ -63,7 +63,7 @@ public:
             player->EquipNewItem(EQUIPMENT_SLOT_HEAD, 12064, true);
         }
 
-        // Prevent players to log in with the same IP
+        /*// Prevent players to log in with the same IP
 		SessionMap sessions = sWorld->GetAllSessions();
 		for (SessionMap::iterator itr = sessions.begin(); itr != sessions.end(); ++itr)
 		{
@@ -80,7 +80,7 @@ public:
 						player->GetSession()->KickPlayer();
 				}
 			}
-		}
+		}*/
 	}
 };
 
