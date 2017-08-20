@@ -1,0 +1,2 @@
+# GMSecurityModule
+Module For AzerothCore
