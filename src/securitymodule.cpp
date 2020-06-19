@@ -1,4 +1,3 @@
-#include "ScriptPCH.h"
 #include "Channel.h"
 
 enum ForbiddenAreas
