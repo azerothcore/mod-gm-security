@@ -1,4 +1,3 @@
-#include "ScriptPCH.h"
 #include "Channel.h"
 
 enum ForbiddenAreas
@@ -21,8 +20,8 @@ public:
 				if (pPlayer->GetSession()->GetSecurity() >= 1)
 					return;
 
-				pPlayer->TeleportTo(560,  2168.909912f,  32.518398f,  41.658501f,  5.186590f); // Prison
-				pPlayer->GetSession()->SendAreaTriggerMessage("Sorry but you not a GameMaster. bye.");
+				pPlayer->TeleportTo(1, 16218.700195, 16403.599609, -64.378288, 6.263502); // Prison
+				pPlayer->GetSession()->SendAreaTriggerMessage("Sorry but you are not a GameMaster this area is off limits.");
 			}
 			break;
 		}
