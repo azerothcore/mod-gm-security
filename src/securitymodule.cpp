@@ -58,7 +58,7 @@ public:
         }
 
         // Prevent players to log in with the same IP
-		SessionMap sessions = sWorld->GetAllSessions();
+		/*SessionMap sessions = sWorld->GetAllSessions();
 		for (SessionMap::iterator itr = sessions.begin(); itr != sessions.end(); ++itr)
 		{
 			if (Player* plr = itr->second->GetPlayer())
@@ -74,7 +74,7 @@ public:
 						player->GetSession()->KickPlayer();
 				}
 			}
-		}
+		}*/
 	}
 };
 
