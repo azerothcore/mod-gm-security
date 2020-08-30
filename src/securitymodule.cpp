@@ -35,11 +35,6 @@ public:
 
 	void OnLogin(Player* player)
 	{
-		//ExecuteLearnScriptInChat(player);
-
-		// Cache deletion reminder to new players
-		if (player->GetTotalPlayedTime() < 1)
-			player->GetSession()->SendAreaTriggerMessage("Please Delete you Cache folder");
 
         // Prevent GMs at all ranks to play as a normal player
         if (player->GetSession()->GetSecurity() == 1 || player->GetSession()->GetSecurity() == 2 || player->GetSession()->GetSecurity() == 3)
@@ -62,8 +57,8 @@ public:
             player->EquipNewItem(EQUIPMENT_SLOT_HEAD, 12064, true);
         }
 
-        /*// Prevent players to log in with the same IP
-		SessionMap sessions = sWorld->GetAllSessions();
+        // Prevent players to log in with the same IP
+		/*SessionMap sessions = sWorld->GetAllSessions();
 		for (SessionMap::iterator itr = sessions.begin(); itr != sessions.end(); ++itr)
 		{
 			if (Player* plr = itr->second->GetPlayer())
