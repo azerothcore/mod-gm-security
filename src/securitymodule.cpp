@@ -12,7 +12,7 @@ class map_security : public PlayerScript
 public:
 	map_security() : PlayerScript("map_security") {}
 
-	void OnUpdateZone(Player* pPlayer, uint32 newZone, uint32 newArea)
+	void OnUpdateZone(Player* pPlayer, uint32 __attribute__ ((unused))newZone, uint32 newArea)
 	{
 		// Forbidden areas:
 		switch (pPlayer->GetAreaId())
