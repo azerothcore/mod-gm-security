@@ -1,4 +1,5 @@
 #include "Channel.h"
+#include "ScriptMgr.h"
 
 enum ForbiddenAreas
 {
